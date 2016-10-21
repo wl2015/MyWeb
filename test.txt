@@ -37,3 +37,5 @@ Are you sure you want to continue connecting (yes/no)?
 看到这个内容放入时候，说明就成功了。
 Hi username! 
 You've successfully authenticated, but GitHub does not provide shell access.
+新加内容
+
