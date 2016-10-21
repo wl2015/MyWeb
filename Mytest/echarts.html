@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>echarts</title>
+    <script src="lib/echarts.js"></script>
+</head>
+<body>
+<div id="biao" style="width: 500px;height: 500px"></div>
+
+<script type="text/javascript">
+    var myfirstbiao3 = echarts.init(document.getElementById('biao'));
+    function fetchData(cb){
+        setTimeout(function(){
+            cb({
+                  categories:["冰箱","洗衣机","电视","电饭煲","微波炉","电风扇"],
+                        data:[51, 200, 326, 103, 210, 320]
+                    });
+        },2000);
+
+    }
+    option = {
+        title: {
+            text: 'myfirstechatrts'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: []
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: []
+        }]
+    };//指定数据
+    fetchData(function(data){
+        myfirstbiao3.setOption(
+                {
+                    title: {
+                        text: 'myfirstechatrts'
+                    },
+                    tooltip: {},
+                    legend: {
+                        data:['销量']
+                    },
+                    xAxis:{
+                        data:data.categories
+                    },
+                    yAxis: {},
+                    series:[{
+                        name:'销量',
+                        type: 'bar',
+                        data:data.data
+                    }]
+                });
+    });
+</script>
+</body>
+</html>

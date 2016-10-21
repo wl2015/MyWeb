@@ -1,0 +1,38 @@
+/**内容页样式 by laiwei 2016-01-29**/
+html {
+	background-color: #ecf0f5;
+	padding-right: 15px;
+}
+
+.content-wrapper, .right-side, .main-footer {
+	margin-left: 0px !important;
+}
+
+.content {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-top: 0px !important;
+}
+
+.select2-selection--multiple .select2-selection__choice {
+	padding: 0px !important;
+}
+
+.select2-selection--multiple .select2-selection__rendered {
+	padding: 0px !important;
+}
+
+.select2 {
+	width: 100% !important;
+}
+.chart_wrapper_pie{
+    height:300px;
+}
+.chart_wrapper{
+    height:410px;
+	margin-bottom: 20px;
+}
+
+.chart_wrapper_auto {
+    height: auto;
+}
